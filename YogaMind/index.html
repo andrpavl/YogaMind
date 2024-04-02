@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>YogaMind</title>
+</head>
+
+<body>
+    <div class="js-guard"></div>
+    <header id="header" class="header">
+        <div class="header-wrapper container">
+            <p class="header-title">YogaMind</p>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-item-link" href="#header">Головна</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#programs">Програми</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#teachers">Викладачі</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#prices">Ціни</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <div class="header-phone">
+                    <span class="header-contact-call">
+                        <svg width="12px" height="12px">
+                            <use href="./assets/icons.svg#icon-telephone"></use>
+                        </svg>Телефонуй!</span>
+                </div>
+                <a href="tel:+380 099 999 99 99" class="header-contact-nr">+380 099 999 99 99</a>
+            </div>
+        </div>
+        <div class="header-menu container">
+            <button data-modal-open class="btn-burger">
+                <svg width="24px" height="24px">
+                    <use href="./assets/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal">
+                    <ul class="burger-list">
+                        <li class="burger-menu-item"><a href="#header">Головна</a></li>
+                        <li class="burger-menu-item"><a href="#programs">Програми</a></li>
+                        <li class="burger-menu-item"><a href="#teachers">Викладачі</a></li>
+                        <li class="burger-menu-item"><a href="#prices">Ціни</a></li>
+                        <li class="burger-menu-item"><a href="#contacts">Контакти</a></li>
+                    </ul>
+                    <button data-modal-close class="close-btn">
+                        <svg width="24px" height="24px">
+                            <use href="./assets/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero container">
+        <div class="hero-content">
+            <h1 class="hero-title"><span>Й</span>ога - <br>
+                стан твоєї душі
+            </h1>
+            <p class="hero-description">Йога допомагає пізнати себе як зовні, так і зсередини. Це чудовий спосіб
+                відволіктися
+                від проблем і позбутися непотрібних думок.
+            </p>
+            <button class="order-training">Записатись на заняття</button>
+        </div>
+        <div class="hero-content-images">
+            <img srcset="./assets/PhotoGroup.jpg 600w,
+            ./assets/PhotoGroup2x.jpg 768w,
+            ./assets/PhotoGroup3x.jpg 1200w" src="./assets/PhotoGroup.jpg" alt="Yogaimages" class="hero-images">
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/search/top/?q=yoga" target="_blank"><svg width="22px"
+                            height="22px">
+                            <use href="./assets/icons.svg#icon-facebook"></use>
+                        </svg></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><svg width="22px" height="22px">
+                            <use href="./assets/icons.svg#icon-instagram"></use>
+                        </svg></a></li>
+                <li><a href="https://www.youtube.com/results?search_query=yoga" target="_blank">
+                        <svg width="22px" height="22px">
+                            <use href="./assets/icons.svg#icon-youtube"></use>
+                        </svg></a></li>
+            </ul>
+            <div class="visitors">
+                <img srcset="./assets/avatars.jpg 600w,
+                ./assets/avatars@2.jpg 768w,
+                ./assets/avatars@3.jpg 1200w" src="./assets/avatars.jpg" alt="avatarsOfVisitors">
+                <div>
+                    <p class="our-visitors">Наші відвідувачі</p>
+                    <p class="raiting">
+                        <svg width="19px" height="20px">
+                            <use href="./assets/icons.svg#icon-star"></use>
+                        </svg>4.9 <span> (1.5k переглядів)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg width="46px" height="12px" class="divider">
+            <use href="./assets/icons.svg#icon-Divider"></use>
+        </svg>
+        <button class="scroll-btn">Вгору</button>
+    </section>
+
+    <section class="programs container" id="programs">
+        <h2 class="programs-title">
+            Популярні програми від YogaMind
+        </h2>
+        <p class="programs-ad">Відчуй прекрасне разом з нами, здобувай гармонію тіла й духу.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper ">
+                <div class="programs-card swiper-slide">
+                    <h3 class="card-title">Аштанга йога</h3>
+                    <p class="card-descr">Покращує гнучкість та розвиває загальну силу тіла. Крім того, тонізує м'язи та
+                        сприяє
+                        зниженню ваги.</p>
+                    <svg width="10px" height="11px">
+                        <use href="./assets/icons.svg#icon-rombik"></use>
+                    </svg>
+                    <img srcset="./assets/ashtanga.jpg 600w,
+                    ./assets/ashtanga@2x.jpg 768w,
+                    ./assets/ashtanga@3x.jpg 1200w" src="./assets/ashtanga.jpg" alt="yoga-program" class="card-image">
+                    <button type="button" class="card-know-more">
+                        Дізнатися більше
+                    </button>
+                </div>
+                <div class="programs-card swiper-slide">
+                    <h3 class="card-title">Віньяса Флоу</h3>
+                    <p class="card-descr">Як і всі інші види йоги, віньяса зміцнює м'язи спини і покращує тонус. Крім
+                        цього
+                        вона
+                        допомагає схуднути.</p>
+                    <svg width="10px" height="11px">
+                        <use href="./assets/icons.svg#icon-rombik"></use>
+                    </svg>
+                    <img srcset="./assets/vinjasa.jpg 600w,
+                    ./assets/vinjasa@2x.jpg 768w,
+                    ./assets/vinjasa@3x.jpg 1200w" src="./assets/vinjasa.jpg" alt="yoga-program" class="card-image">
+                    <button type="button" class="card-know-more">
+                        Дізнатися більше
+                    </button>
+                </div>
+                <div class="programs-card swiper-slide">
+                    <h3 class="card-title">Хатха йога</h3>
+                    <p class="card-descr">Хатха йога відмінно зміцнює м'язи спини та витягує хребет. Допомагає позбутися
+                        болю в
+                        спині, шиї.</p>
+                    <svg width="10px" height="11px">
+                        <use href="./assets/icons.svg#icon-rombik"></use>
+                    </svg>
+                    <img srcset="./assets/khatha.jpg 600w,
+                    ./assets/khatha@2x.jpg 768w,
+                    ./assets/khatha@3x.jpg 1200w" src="./assets/khatha.jpg" alt="yoga-program" class="card-image">
+                    <button type="button" class="card-know-more">
+                        Дізнатися більше
+                    </button>
+                </div>
+                <div class="programs-card swiper-slide">
+                    <h3 class="card-title">Робота з пресом</h3>
+                    <p class="card-descr">Якщо ви хочете мати гарну поставу та міцний прес – ця програма йоги, те що вам
+                        потрібно.</p>
+                    <svg width="10px" height="11px">
+                        <use href="./assets/icons.svg#icon-rombik"></use>
+                    </svg>
+                    <img srcset="./assets/presswork.jpg 600w,
+                    ./assets/presswork@2x.jpg 768w,
+                    ./assets/presswork@3x.jpg 1200w" src="./assets/presswork.jpg" alt="yoga-program"
+                        class="card-image">
+                    <button type="button" class="card-know-more">
+                        Дізнатися більше
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <svg width="46px" height="12px" class="divider">
+            <use href="./assets/icons.svg#icon-Divider"></use>
+        </svg>
+    </section>
+
+    <section class="trainers container" id="teachers">
+        <h2 class="trainers-title">
+            Наші тренери
+        </h2>
+        <img loading="lazy" srcset="./assets/trainer.jpg 600w,
+        ./assets/trainer@2x.jpg 768w,
+        ./assets/trainer@3x.jpg 1200w" src="./assets/trainer.jpg" alt="Anastasia" class="trainers-img">
+        <div class="trainer-card">
+            <p class="trainer-name">Анастасія</p>
+            <p class="trainer-position">Сертифікований тренер з йоги</p>
+
+            <p class="trainer-descr">Тренування зі мною допоможуть Вам розвинути гнучкість, еластичність м'язів,
+                зміцнити
+                імунну систему, покращити поставу
+                та позбутися напруги та втоми.
+                Регулярно відвідую школи йоги та семінари у Франції, Італії, Україні.
+                Хороше самопочуття та відмінний настрій після моїх занять Вам забезпечено.</p>
+        </div>
+        <svg width="46px" height="12px" class="divider">
+            <use href="./assets/icons.svg#icon-Divider"></use>
+        </svg>
+    </section>
+
+    <section class="abonements container" id="prices">
+        <h2 class="abon-title">Популярні абонементи</h2>
+        <p class="abon-ad">Надихайся йогою: перше пробне заняття - безкоштовно!</p>
+        <div class="abon-card-list">
+            <div class="abon-card">
+                <p class="abon-price">150 грн</p>
+                <p class="abon-descr">Абонемент на 1 групове заняття.
+                    При придбанні 3-х занять, знижка на наступне 10%.</p>
+                <button class="abon-buy-btn">Придбати</button>
+            </div>
+            <div class="popular-back">
+                <div class="abon-card-popular">
+                    <p class="abon-price-popular">1200 грн</p>
+                    <p class="abon-descr-popular">Абонемент на 8 занять + 2 індивідуальних заняття з тренером</p>
+                    <button>Придбати</button>
+                </div>
+            </div>
+            <div class="abon-card">
+                <p class="abon-price">1800 грн</p>
+                <p class="abon-descr">Абонемент на 12 занять + 2 індивідуальних заняття з тренером</p>
+                <button class="abon-buy-btn">Придбати</button>
+            </div>
+        </div>
+        <svg width="46px" height="12px" class="divider">
+            <use href="./assets/icons.svg#icon-Divider"></use>
+        </svg>
+    </section>
+    <section class="contacts container" id="contacts">
+        <div class="contacts-wrapper">
+            <img loading="lazy" srcset="./assets/contactsPicture.jpg 600w,
+            ./assets/contactsPicture@2x.jpg 768w,
+            ./assets/contactsPicture@3x.jpg 1200w" src="./assets/contactsPicture.jpg" alt="hand and tree"
+                class="contacts-image">
+            <div class="openning-hours">
+                <h2 class="contacts-title">Робочі години</h2>
+                <p>Понеділок - П'ятниця <span>7:00 - 21:00</span></p>
+                <p>Субота - Неділя <span>9:00 - 21:00</span></p>
+            </div>
+            <div class="address">
+                <h2 class="contacts-title">Адреса</h2>
+                <address>вул. Данила Щербаківського, 45А, 3 Поверх, праве крило</address>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2135.3259146150945!2d30.403428711752113!3d50.471924988510885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ccff46e15569%3A0x2c3953f486081923!2z0LLRg9C70LjRhtGPINCU0LDQvdC40LvQsCDQqdC10YDQsdCw0LrRltCy0YHRjNC60L7Qs9C-LCA0NWEsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDQxMTE!5e0!3m2!1suk!2sdk!4v1709759149938!5m2!1suk!2sdk"
+                    height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <ul class="social-media-contacts">
+            <li><a href="https://www.facebook.com/search/top/?q=yoga" target="_blank"><svg width="22px" height="22px">
+                        <use href="./assets/icons.svg#icon-facebook"></use>
+                    </svg></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><svg width="22px" height="22px">
+                        <use href="./assets/icons.svg#icon-instagram"></use>
+                    </svg></a></li>
+            <li><a href="https://www.youtube.com/results?search_query=yoga" target="_blank"> <svg width="22px"
+                        height="22px">
+                        <use href="./assets/icons.svg#icon-youtube"></use>
+                    </svg></a></li>
+        </ul>
+        <div class="view-on-map">
+            <a target="_blank" class="location" href="https://maps.app.goo.gl/pNnhDCBmLWxcYQUu9">
+                <svg width="24px" height="22px">
+                    <use href="./assets/icons.svg#icon-location"></use>
+                </svg>
+                <p>Дивитись на мапі</p>
+            </a>
+        </div>
+    </section>
+    <footer class="footer container">
+        <p class="logo-name">YogaMind</p>
+
+        <p class="footer-rights">Copyright © 2023<br> YogaMind Studio. <br>
+            All rights reserved</p>
+
+    </footer>
+    <script src="./js/scroll-btn.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+
+</body>
+
+</html>
