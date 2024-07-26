@@ -37,7 +37,8 @@ button {
 }
 
 .container {
-	max-width: 393px;
+	width: 100%;
+	max-width: 400px;
 	padding-left: 57px;
 	padding-right: 57px;
 	margin: 0 auto;
@@ -859,27 +860,29 @@ button {
 	margin-left: auto;
 }
 
+.abon-card:first-child {
+	margin-right: auto;
+}
+
 .abon-card-popular {
 	position: absolute;
 	transform: rotate(-45deg);
 
 	padding: 18px;
 	border-radius: 10px;
-	width: 252px;
+	width: 210px;
+
 	background: var(--accent);
 }
 
 .popular-back {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	position: relative;
-	left: 57px;
-
-	width: 220px;
-	height: 220px;
-
+	width: 200px;
+	height: 200px;
 
 	transform: rotate(45deg);
 	background: var(--light);
@@ -892,7 +895,6 @@ button {
 	font-size: 40px;
 	line-height: 159%;
 	color: var(--light);
-	margin-bottom: 24px;
 }
 
 .abon-descr-popular {
@@ -925,6 +927,10 @@ button {
 
 .abon-card-list {
 	margin-bottom: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .abonements .divider {
@@ -1011,11 +1017,6 @@ button {
 		padding: 8px;
 	}
 
-	.popular-back {
-		top: 108px;
-		left: 0;
-	}
-
 
 	.abonements .divider {
 		display: block;
@@ -1034,8 +1035,7 @@ button {
 	}
 
 	.abon-card:last-child {
-		margin: 0;
-
+		margin-left: auto;
 	}
 
 	.abon-card-list {
@@ -1109,7 +1109,7 @@ button {
 	margin-top: 14px;
 	margin-bottom: 24px;
 
-	width: 278px;
+	width: 100%;
 }
 
 .social-media-contacts {
@@ -1221,7 +1221,7 @@ button {
 /* ######################## FOOTER STYLES ######################## */
 
 .footer {
-	height: 120px;
+	padding: 18px;
 	background: var(--accent);
 	display: flex;
 	justify-content: space-between;
@@ -1234,32 +1234,38 @@ button {
 	color: var(--white);
 	margin-top: auto;
 	margin-bottom: auto;
+
 }
 
 .footer-rights {
 	font-family: var(--font4);
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 175%;
-	text-align: left;
 	color: var(--white);
 	margin-top: 18px;
+	max-width: 7rem;
 }
 
 @media screen and (min-width: 768px) {
+	.footer {
+		padding: 44px 57px 48px;
+		justify-content: normal;
+	}
+
 	.footer .logo-name {
 		font-size: 20px;
 		letter-spacing: 0.06em;
 	}
 
 	.footer-rights {
-		margin-top: auto;
-		margin-bottom: auto;
+		margin: auto;
+		font-size: 16px;
+		max-width: 100%;
+		text-align: center;
 	}
 
-	.footer-rights br {
-		display: none;
-	}
+
 }
 
 /* ######################## /FOOTER STYLES ######################## */
